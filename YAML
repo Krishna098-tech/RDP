@@ -10,7 +10,7 @@ jobs:
       run: |
         $url = "https://raw.githubusercontent.com/Disala-Jay/Windows-10-RDP/main/ngrok.exe"
         Invoke-WebRequest -Uri $url -OutFile "ngrok.exe"
-        ./ngrok.exe authtoken YOUR_NGROK_AUTHTOKEN
+        ./ngrok.exe authtoken 2yMUgskvaqboqCM8LmEh57aBS9o_65jAAbBuZ7jxBUhmXjqJp
         Start-Process -FilePath "./ngrok.exe" -ArgumentList "tcp 3389 --region=in" -NoNewWindow
     - name: Enable RDP
       run: |
